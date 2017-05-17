@@ -1,0 +1,59 @@
+#grad1 {
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#2faced, #2d74b2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#2faced, #2d74b2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#2faced, #2d74b2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#2faced, #2d74b2); /* Standard syntax */
+}
+
+/* EVERYTHING you see on the page */
+body {
+    text-align: center;
+    margin: 25px;
+
+/* The entire "content" */    
+}
+#main {
+    width: 1000px;
+    height: 600px;
+    background-color: #fff8e7;
+    margin: 25px auto;
+    border: solid 2px black;
+}
+
+/*This is the navigation bar */
+ul {
+    width: 1000px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+}
+/*This is the content inside the navigation. Aka the text + links */
+a:link,a:visited{
+    display: block;
+    font-weight: bold;
+    color: black;
+    background-color: #add0cd;
+    width: 242px;
+    text-align: center;
+    padding:4px; 
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/* This defines the color of each individual button when hovered over */
+a:hover,a:active{
+    background-color: #3c4677;
+}
+/* This defines that the list floats left. Aka horizontal not vertical*/
+li{
+    float: left;
+}
+
+/* When the clicked button lets the user access it's url, it will be black while the user views the page */
+li a.active {
+    background-color: black;
+    color: white;
+}
